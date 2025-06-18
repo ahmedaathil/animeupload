@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    height: 2500px;
+    background-color: #151515;
+}
+
+header {
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+
+}
+
+h {
+    flex: 2;
+    letter-spacing: 6px;
+    font-size: 30px;
+    font-weight: solid;
+    text-transform: uppercase;
+    color: pink;
+    margin-left: 130px;
+    padding: 10px;
+}
+
+
+ul,
+li {
+    display: flex;
+    list-style: none;
+    flex: 3 1 0;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(246, 236, 211);
+    margin-right: 10px;
+
+}
+
+li:hover {
+    background-color: beige;
+    width: 5px;
+    height: 20px;
+
+    border-radius: 30px;
+    color: black;
+    transition: 0.4s;
+
+    padding-left: 20px;
+
+}
+
+.profile {
+    vertical-align: top;
+}
+
+.prof {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 30px;
+
+}
+
+.butt {
+    flex: 1 1 0;
+    display: flex;
+    column-gap: 30px;
+    padding: 20px;
+
+
+}
+
+.search {
+    background-color: beige;
+    color: blue;
+    border-radius: 30px;
+    width: 150px;
+    padding: 20px;
+    height: 30px;
+
+
+}
+
+.sign {
+    background-color: rgb(71, 38, 203);
+    color: rgb(247, 238, 238);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 70px;
+    height: 40px;
+    font-size: 17px;
+    box-shadow: 3px 5px 3px rgba(75, 36, 36, 0.5);
+}
+
+.nav {
+    width: 80px;
+    height: 100%;
+    background-color: black;
+    top: 0px;
+    margin-bottom: 200px;
+    position: fixed;
+
+}
+
+.icons {
+    background-color: black;
+
+    color: white;
+    height: 2000px;
+}
+
+.navul,
+.navli {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-bottom: 150px;
+    align-items: center;
+    font-size: 10px;
+    position: sticky;
+    top: 90px;
+    color: rgb(142, 133, 151);
+
+}
+
+.navli:hover {
+    background-color: beige;
+    width: 40px;
+    border-radius: 20px;
+    color: black;
+    transition: 0.8s;
+    padding-left: 10px;
+
+
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    margin-left: 80px;
+    margin-bottom: 300px;
+}
+
+.mainpicclass {
+
+    width: 100%;
+
+    height: 30%;
+
+}
+
+.mainhead {
+    color: black;
+    width: 20px;
+    height: 25px;
+    padding-bottom: 35px;
+}
+
+.ah1 {
+    color: rgb(47, 47, 58);
+    width: 500px;
+    height: 50px;
+    padding-top: 35px;
+    padding-left: 70px;
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.paramain {
+    width: 450px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+.maincontent {
+
+    column-gap: 25px;
+}
+
+.wrapper {
+    display: flex;
+    column-gap: 50px;
+    object-fit: cover;
+}
+
+img:hover {
+    opacity: 20%;
+    margin: 0 30px;
+    transition: all 1s ease-in-out;
+    transform: scale(1.2);
+}
+
+.forimg {}
+
+.ah2 {
+    padding: 30px;
+    color: blanchedalmond;
+    font-size: 35px;
+}
+
+.maincontent-img {
+
+    height: 300px;
+    width: 350px;
+
+}
+
+.maincontentpara {
+    width: 300px;
+    height: 50px;
+    color: rgb(165, 151, 176);
+    text-transform: uppercase;
+    font: lighter;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-bottom: 500px;
+}
+
+.foot {
+    background-color: #151515;
+    height: 355px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-color: rgb(71, 43, 43);
+    border-width: 7px;
+    border-style: solid;
+}
+
+.picfoot {
+    background-color: #151515;
+    height: 359px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    border-color: rgb(71, 43, 43);
+    border-width: 7px;
+    border-style: solid;
+    padding-right: 40px;
+}
+
+.formclass {
+
+    width: 100%;
+    display: block;
+    padding-left: 50%;
+    border-color: rgb(69, 56, 79);
+    border-width: 7px;
+    border-style: solid;
+    height: 170px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+
+
+.twofoot {
+    display: flex;
+    width: 100%;
+}
+
+.deathnote {
+    width: 840px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 199px;
+    height: 26px;
+    border-radius: 30px;
+    background-color: black;
+    color: blueviolet;
+
+
+}
