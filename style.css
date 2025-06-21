@@ -1,11 +1,13 @@
 * {
     margin: 0;
+    cursor: pointer;
 
 }
 
 body {
     height: 2500px;
     background-color: #151515;
+
 }
 
 header {
@@ -18,11 +20,13 @@ header {
 
 .menu {
     display: flex;
+    position: relative;
 
 }
 
 h {
-    flex: 2;
+    flex: 1.7;
+    padding-right: 50px;
     letter-spacing: 6px;
     font-size: 30px;
     font-weight: solid;
@@ -32,51 +36,58 @@ h {
     padding: 10px;
 }
 
+.menuul {
+    padding-right: 30px;
+    row-gap: 20px;
+    flex: 1.9;
+}
 
 ul,
 li {
     display: flex;
     list-style: none;
-    flex: 3 1 0;
+    justify-content: space-between;
     padding: 10px;
     letter-spacing: 2px;
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(246, 236, 211);
+    color: white;
     margin-right: 10px;
+
+
 
 }
 
 li:hover {
-    background-color: beige;
-    width: 5px;
-    height: 20px;
-
+    background: #97551395;
+    color: white;
+    font-size: 16px;
     border-radius: 30px;
-    color: black;
-    transition: 0.4s;
-
-    padding-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 20px;
 
 }
 
 .profile {
-    vertical-align: top;
+
+    display: flex;
+    align-items: center;
+ 
+
 }
 
 .prof {
 
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    padding: 10px;
-    margin-left: 30px;
-
+    border-radius: 30%;
+    object-fit: cover;
 }
 
 .butt {
-    flex: 1 1 0;
+
     display: flex;
     column-gap: 30px;
     padding: 20px;
@@ -85,30 +96,47 @@ li:hover {
 }
 
 .search {
-    background-color: beige;
-    color: blue;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #97551333;
+    color: white;
+    font-size: 16px;
     border-radius: 30px;
-    width: 150px;
-    padding: 20px;
-    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
 
 
+
+
+}
+
+.search:hover {
+    background: #7b869381;
 }
 
 .sign {
-    background-color: rgb(71, 38, 203);
-    color: rgb(247, 238, 238);
-    border-radius: 10px;
-    margin-left: 10px;
-    padding: 10px;
-    width: 70px;
+
+    width: 140%;
     height: 40px;
-    font-size: 17px;
-    box-shadow: 3px 5px 3px rgba(75, 36, 36, 0.5);
+    padding: 12px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+   
 }
 
+.sign:hover {
+    background: #0072ff;
+}
+
+
 .nav {
-    width: 80px;
+    width: 120px;
     height: 100%;
     background-color: black;
     top: 0px;
@@ -139,12 +167,13 @@ li:hover {
 }
 
 .navli:hover {
-    background-color: beige;
-    width: 40px;
-    border-radius: 20px;
-    color: black;
-    transition: 0.8s;
-    padding-left: 10px;
+    background: #ab845d30;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 20px;
 
 
 }
@@ -153,7 +182,7 @@ main {
     width: 100%;
     height: 100%;
 
-    margin-left: 80px;
+    margin-left: 120px;
     margin-bottom: 300px;
 }
 
@@ -213,7 +242,7 @@ img:hover {
     transform: scale(1.2);
 }
 
-.forimg {}
+
 
 .ah2 {
     padding: 30px;
@@ -241,8 +270,8 @@ img:hover {
 
 .foot {
     background-color: #151515;
-    height: 355px;
-    width: 50%;
+    height: 359px;
+    width:750px;
     display: flex;
     flex-direction: column;
     border-color: rgb(71, 43, 43);
@@ -262,21 +291,6 @@ img:hover {
     padding-right: 40px;
 }
 
-.formclass {
-
-    width: 100%;
-    display: block;
-    padding-left: 50%;
-    border-color: rgb(69, 56, 79);
-    border-width: 7px;
-    border-style: solid;
-    height: 170px;
-    padding: 20px;
-    justify-content: center;
-    border-radius: 20px;
-
-}
-
 
 
 .twofoot {
@@ -285,19 +299,148 @@ img:hover {
 }
 
 .deathnote {
-    width: 840px;
+    width: 780px;
     height: 350px;
     object-fit: cover;
+    opacity: 20%;
+
+    transition: all 1s ease-in-out;
+
+
+
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 199px;
-    height: 26px;
-    border-radius: 30px;
-    background-color: black;
-    color: blueviolet;
 
 
+/*media query*/
+/* ========== Responsive Styles for Mobile and Tablets ========== */
+@media screen and (max-width: 768px) {
+
+    header,
+    .menu,
+    ul,
+    li,
+    .butt {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h {
+        font-size: 20px;
+        margin-left: 0;
+        padding: 5px;
+    }
+
+    ul,
+    li {
+        flex: none;
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .butt {
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 10px;
+    }
+
+    .search,
+    .sign {
+        width: 100px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .navul,
+    .navli {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 10px;
+        top: unset;
+        position: static;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .ah1 {
+        font-size: 28px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .paramain {
+        width: auto;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .maincontent-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .maincontentpara {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .foot,
+    .picfoot {
+        width: 800px;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .twofoot {
+        flex-direction: column;
+    }
+
+    .formclass {
+        width: 100%;
+        padding: 10px;
+        border-width: 3px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .designpara{
+        vertical-align: bottom;
+        padding-top: 50px;
+    }
+}
+
+
+.designpara{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding-top: 60px;
+   padding-bottom: 90px;
+    color: white;
+    text-align: center;
 }
